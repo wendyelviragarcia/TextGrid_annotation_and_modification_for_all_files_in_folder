@@ -15,5 +15,8 @@ This script goes through all the wavs in a folder and annotates them (sound by s
 ## remove_tiers: 
 This script runs through all the Textgrids in a folder and removes the number of tiers you select and those below it
 
+## remove_tier: 
+This script runs through all the Textgrids in a folder and removes only one tier (you can select the number)
+
 ## add_tiers: 
 It adds new interval or point tiers for all the TextGrids in a folder.
