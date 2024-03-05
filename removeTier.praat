@@ -1,5 +1,5 @@
-#####################	INSTRUCCIONES	#######################
-#	remove-tiers.praat
+#####################	INSTRUCTIONS	#######################
+#	remove-tier.praat
 #	
 #	This script runs through all the Textgrids in a folder and removes the X  tier of the TextGrid.
 #							INSTRUCTIONS
@@ -8,13 +8,14 @@
 # 				2) Write the folder and the number of tier you want to remove.
 #
 #	comments are always welcome 
-#	Wendy Elvira-Garcia
+#	Wendy Elvira-García
 #	Free script under a GNU General Public License contract. 
-#	wendyelviragarcia @ g m a i l . c o m
-#	Retrieved from http://stel.ub.edu/labfon/en/praat-scripts
+#	wendyelviragarcia @ u b . e d u
+#	Retrieved from https://www.ub.edu/phoneticslaboratory/
+# 	https://github.com/wendyelviragarcia
 #	Laboratori de Fonètica (University of Barcelona)
 #####################	FORMULARIO	#######################
-form Folder
+form Remove tier
 comment PLEASE MAKE A COPY OF YOUR DATA BEFORE 
 comment RUNNING THIS SCRIPT!!!!
 comment __
@@ -44,13 +45,9 @@ for ifile to numberOfFiles
 	do ("Read from file...", "'directoriomater$'/'nombreArchivo$'")
 	select TextGrid 'nombreObjeto$'
 	
-	
 		
 			nowarn Remove tier: number_of_tier 
 		
-	
-	
-	
 	
 	do ("Save as text file...", "'output_folder$'/'nombreArchivo$'")
 	
